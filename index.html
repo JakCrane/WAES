@@ -2,7 +2,7 @@
 <html lang='en-GB' >
     <head>
         <title>History of Telecommunications</title>
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="style.css">
         <meta charset="'UTF-8">
         <meta name="keywords" content="Satellite, CubeSat, Space, Telecommunications">
         <meta name="author" content="Jack Crane">
@@ -12,14 +12,22 @@
     <body> <!-- check alt texts, will it work from browser -->
         <header>
             <h1 id="main-title">History of Telecommunications</h1>
-            <nav>
-                <img id="logo" src="https://img.freepik.com/premium-vector/satellite-logo_10250-1078.jpg?w=2000" alt="Logo">
-                <span class="nav-button"><a href="home">Home</a></span>
-                <span class="nav-button"><a href="history">History</a></span>
-                <span class="nav-button"><a href="disaster">Disaster</a></span>
-                <span class="nav-button"><a href="cubesat">Cubesat</a></span>
-                <button id="close-nav-bar">&lt;</button>
-            <nav>
+            <nav id="nav">
+                <div id="logo-container" class="nav-child">
+                    <img id="logo" src="https://img.freepik.com/premium-vector/satellite-logo_10250-1078.jpg?w=2000" alt="Logo">
+                </div>
+                <div id="button-container" class="nav-child">
+                    <ul id="li1">
+                        <li class="mainli"><button><a href="index.html">Home</a></button></li>
+                        <li class="mainli"><button><a href="history.html">History</a></button></li>
+                        <li class="mainli"><button><a href="disaster.html">Disaster</a></button></li>
+                        <li class="mainli"><button><a href="cubesat.html">CubeSats</a></button></li>
+                    </ul>   
+                    <ul id="li2">
+                        <li id="closeli"><button id="close-nav-bar">&lt;</button></li>
+                    </ul>
+                </div>
+            </nav>
             <div class="slideshow-container"> <!-- enable auto scroll with css -->
                 <div class="slideshow">
                     <p class="numbering">1/4</p>
