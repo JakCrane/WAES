@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='en-GB' >
     <head>
-        <title>History of Telecommunications</title>
+        <title>Satellites 101</title>
         <link rel="stylesheet" href="style.css">
         <meta charset="'UTF-8">
         <meta name="keywords" content="Satellite, CubeSat, Space, Telecommunications">
@@ -10,28 +10,29 @@
         <meta name="description" content="Educational Satellite Website">
     </head>
     <body> <!-- check alt texts, will it work from browser -->
-        <header>
-            <h1 id="main-title">History of Telecommunications</h1>
-            <nav id="nav">
-                <div id="logo-container" class="nav-child">
-                    <img id="logo" src="https://img.freepik.com/premium-vector/satellite-logo_10250-1078.jpg?w=2000" alt="Logo">
-                </div>
-                <div id="button-container" class="nav-child">
-                    <ul id="li1">
+        <nav>
+            <ul id ='unhidden'>
+                <li id="logo_li">
+                    <div id="logo" class="nav-child"></div>
+                </li>
+                <li id="button_li">
+                    <ul>
                         <li class="mainli"><button><a href="index.html">Home</a></button></li>
                         <li class="mainli"><button><a href="history.html">History</a></button></li>
                         <li class="mainli"><button><a href="disaster.html">Disaster</a></button></li>
                         <li class="mainli"><button><a href="cubesat.html">CubeSats</a></button></li>
-                    </ul>   
-                    <ul id="li2">
-                        <li id="closeli"><button id="close-nav-bar">&lt;</button></li>
+                        <li class="mainli" id="closeli" onclick="document.getElementById('unhidden').style.display = 'none', document.getElementById('hidden').style.display = 'block' "><button id="close-nav-bar">&lt;</button></li>
                     </ul>
-                </div>
-            </nav>
+                </li>
+            </ul>
+            <button id="hidden" onclick="document.getElementById('unhidden').style.display = 'block', document.getElementById('hidden').style.display = 'none'">&gt;</button>
+        </nav>
+        <header>
+            <h1 id="main-title">Satellites 101</h1>
             <div class="slideshow-container"> <!-- enable auto scroll with css -->
-                <div class="slideshow">
-                    <p class="numbering">1/4</p>
+                <div id="slideshow_one">
                     <img id="slide-pic-1" src="https://media.istockphoto.com/id/1324502848/photo/spaceship-on-orbit-of-planet-earth-view-from-iss-station-exploration-of-solar-system-sci-fi.jpg?b=1&s=170667a&w=0&k=20&c=c8M69amWdOzLOZuvUOmmtpzdf86aOB2oMZrsWn_AD7Q=" alt="Sliding satellites imgs 1">
+                    <p class="numbering">1/4</p>
                     <p class="caption">Caption 1</p>
                 </div>
                 <div class="slideshow">
@@ -51,6 +52,7 @@
                 </div>    
             </div>    
         </header>
+        
         <section>
             <div>
                 <img id="body-img-1" src="https://media.istockphoto.com/id/537228978/photo/landscape-with-milky-way-silhouette-of-a-father-and-son.jpg?s=612x612&w=0&k=20&c=leGjKS51LqES_wjn5pC19B-pr6xQ0fQ7gg4RHitfZco=" alt="Astronomy">
