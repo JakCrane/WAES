@@ -28,31 +28,34 @@
             <button id="hidden" onclick="document.getElementById('unhidden').style.display = 'block', document.getElementById('hidden').style.display = 'none'">&gt;</button>
         </nav>
         <header>
-            <h1 id="main-title">Satellites 101</h1>
-            <div class="slideshow-container"> <!-- enable auto scroll with css -->
-                <div id="slideshow_one">
-                    <img id="slide-pic-1" src="https://media.istockphoto.com/id/1324502848/photo/spaceship-on-orbit-of-planet-earth-view-from-iss-station-exploration-of-solar-system-sci-fi.jpg?b=1&s=170667a&w=0&k=20&c=c8M69amWdOzLOZuvUOmmtpzdf86aOB2oMZrsWn_AD7Q=" alt="Sliding satellites imgs 1">
+            <h1>Satellites 101</h1>
+            <div> <!-- enable auto scroll with css -->
+                <div id="slide-one">
                     <p class="numbering">1/4</p>
                     <p class="caption">Caption 1</p>
+                    <button class="backbutton slide-show-button" onclick="document.getElementById('slide-one').style.display = 'none', document.getElementById('slide-four').style.display = 'block'"></button>>&lt;</button>
+                    <button class="forwardbutton slide-show-button" onclick="document.getElementById('slide-one').style.display = 'none', document.getElementById('slide-two').style.display = 'block'">&gt;</button>
                 </div>
-                <div class="slideshow">
+                <div id="slide-two">
                     <p class="numbering">2/4</p>
-                    <img id="slide-pic-2" src="https://d2908q01vomqb2.cloudfront.net/9e6a55b6b4563e652a23be9d623ca5055c356940/2022/05/17/virtualizing-satellite-ground-segment-aws-1200x600-1.jpg" alt="Sliding satellites imgs 1">
                     <p class="caption">Caption 2</p>
-                </div>
-                <div class="slideshow">
+                    <button class="backbutton slide-show-button" onclick="document.getElementById('slide-two').style.display = 'none', document.getElementById('slide-one').style.display = 'block'"></button>>&lt;</button>
+                    <button class="forwardbutton slide-show-button" onclick="document.getElementById('slide-two').style.display = 'none', document.getElementById('slide-three').style.display = 'block'">&gt;</button>
+                </div> 
+                <div id="slide-three">
                     <p class="numbering">3/4</p>
-                    <img id="slide-pic-3" src="https://castnav.com/wp-content/uploads/2019/04/Outer-space-satellite.jpg" alt="Sliding satellites imgs 1">
                     <p class="caption">Caption 3</p>
-                </div>
-                <div class="slideshow">
+                    <button class="backbutton slide-show-button" onclick="document.getElementById('slide-three').style.display = 'none', document.getElementById('slide-two').style.display = 'block'"></button>>&lt;</button>
+                    <button class="forwardbutton slide-show-button" onclick="document.getElementById('slide-three').style.display = 'none', document.getElementById('slide-four').style.display = 'block'">&gt;</button>
+                </div> 
+                <div id="slide-four">
                     <p class="numbering">4/4</p>
-                    <img id="slide-pic-4" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.co.uk%2Fpin%2F713398397211160792%2F&psig=AOvVaw1vOHxAk-PXmFAELbNOSpVQ&ust=1670668553600000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCNC_q7-r7PsCFQAAAAAdAAAAABAS" alt="Sliding satellites imgs 1">
                     <p class="caption">Caption 4</p>
-                </div>    
+                    <button class="backbutton slide-show-button" onclick="document.getElementById('slide-four').style.display = 'none', document.getElementById('slide-three').style.display = 'block'"></button>>&lt;</button>
+                    <button class="forwardbutton slide-show-button" onclick="document.getElementById('slide-four').style.display = 'none', document.getElementById('slide-one').style.display = 'block'">&gt;</button>
+                </div>  
             </div>    
         </header>
-        
         <section>
             <div>
                 <img id="body-img-1" src="https://media.istockphoto.com/id/537228978/photo/landscape-with-milky-way-silhouette-of-a-father-and-son.jpg?s=612x612&w=0&k=20&c=leGjKS51LqES_wjn5pC19B-pr6xQ0fQ7gg4RHitfZco=" alt="Astronomy">
