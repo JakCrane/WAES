@@ -48,64 +48,84 @@ button {
 }
 
 /* header css */
-header > h1 {
-    text-align:center;
-}
-header > div {
-    height:60vh;
-    width:80vw;
-    max-width: 700px;
-    max-height: 700px;
-    margin:auto;
-    position:relative;
-    border: 5px solid white;
-}
-
-header > div > div {
-    background-size: contain;
-    background-repeat: no-repeat;
-    height:inherit;
-    width:inherit;
-}
-.numbering {
-    position: absolute; 
-    top: 0; 
-    left: 0;
-    margin:2%;
-}
-.caption {
-    position: absolute; 
-    bottom: 0; 
-    left: 0; 
-    width: 100%; 
-    text-align: center;
-}
-.slide-show-button {
-    height:5%;
-    margin:30%;
-}
-.backbutton {
-    position: absolute; 
-    left: 0;
-}
-.forwardbutton{
-    position: absolute; 
-    right: 0;
-}
-#slide-one {
-    display:block;
+   
+  /* Styling the area of the slides */
+  #slideshow {
+    overflow: hidden;
+    height: 510px;
+    width: 728px;
+    margin: 0 auto;
+  }
+   
+  /* Style each of the sides
+  with a fixed width and height */
+  .slide {
+    float: left;
+    height: 510px;
+    width: 728px;
+  }
+   
+  /* Add animation to the slides */
+  .slide-wrapper {
+     
+  /* Calculate the total width on the
+    basis of number of slides */
+    width: calc(728px * 4);
+   
+  /* Specify the animation with the
+    duration and speed */
+    animation: slide 10s ease infinite;
+  }
+   
+  /* Set the background color
+  of each of the slides */
+  .slide:nth-child(1) {
+    background: green;
     background-image: url("https://media.istockphoto.com/id/1324502848/photo/spaceship-on-orbit-of-planet-earth-view-from-iss-station-exploration-of-solar-system-sci-fi.jpg?b=1&s=170667a&w=0&k=20&c=c8M69amWdOzLOZuvUOmmtpzdf86aOB2oMZrsWn_AD7Q=");
-}
-
-#slide-two {
-    display:none;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+   
+  .slide:nth-child(2) {
+    background: pink;
     background-image: url("https://d2908q01vomqb2.cloudfront.net/9e6a55b6b4563e652a23be9d623ca5055c356940/2022/05/17/virtualizing-satellite-ground-segment-aws-1200x600-1.jpg");
-}
-#slide-three {
-    display:none;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+   
+  .slide:nth-child(3) {
+    background: red;
     background-image: url("https://castnav.com/wp-content/uploads/2019/04/Outer-space-satellite.jpg");
-}
-#slide-four {
-    display:none;
-    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.co.uk%2Fpin%2F713398397211160792%2F&psig=AOvVaw1vOHxAk-PXmFAELbNOSpVQ&ust=1670668553600000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCNC_q7-r7PsCFQAAAAAdAAAAABAS")
-}
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+   
+  .slide:nth-child(4) {
+    background: yellow;
+    background-image: url("https://images6.alphacoders.com/373/thumb-1920-373654.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+   
+  /* Define the animation
+  for the slideshow */
+  @keyframes slide {
+     
+  /* Calculate the margin-left for
+    each of the slides */
+    20% {
+      margin-left: 0px;
+    }
+   
+    40% {
+      margin-left: calc(-728px * 1);
+    }
+   
+    60% {
+      margin-left: calc(-728px * 2);
+    }
+   
+    80% {
+      margin-left: calc(-728px * 3);
+    }
+  }
